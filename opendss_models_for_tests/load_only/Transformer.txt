@@ -1,0 +1,2 @@
+New Transformer.tr1 phases=3 windings=2 XHL=0.004 ppm_antifloat=0 buses=[sourcebus, 1, ]
+~ conns=[delta, wye, ] kVs=[11, 0.4, ] kVAs=[800, 800, ] taps=[1, 1.00, ] wdg=1 %R=0.0004 RdcOhms=0.00051425 wdg=2 %R=0.0004 RdcOhms=2.451627E-007

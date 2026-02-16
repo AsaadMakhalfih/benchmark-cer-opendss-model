@@ -1,0 +1,10 @@
+New LineCode.AAC_Triton nphases=3 emergamps=1000 r1=0.0708 r0=0.1834 x1=0.2883 x0=1.0057 c1=0 c0=0 units=km
+New LineCode.AAC_Neptune nphases=3 emergamps=653 r1=0.1834 r0=0.4228 x1=0.3254 x0=1.09 c1=0 c0=0 units=km
+New LineCode.ACSR_Cricket nphases=3 emergamps=637 r1=0.2459  r0=0.5726 x1=0.3340 x0=1.0906 c1=0 c0=0 units=km
+New LineCode.ACSR_Diving nphases=3 emergamps=1045 r1=0.1145  r0=0.2889 x1=0.3084 x0=0.9859 c1=0 c0=0 units=km
+New LineCode.ACSR_Baseball nphases=3 emergamps=378 r1=0.5523  r0=1.1343 x1=0.3479 x0=1.3163 c1=0 c0=0 units=km
+New LineCode.ABC_4core_150 nphases=3 emergamps=343 r1=0.2060 r0=0.6958 x1=0.09233 x0=0.4366 c1=0 c0=0 units=km
+New LineCode.ABC_4core_95 nphases=3 emergamps=257 r1=0.3981 r0=1.2489 x1=0.09783 x0=0.6676 c1=0 c0=0 units=km
+New LineCode.ABC_4core_50 nphases=3 emergamps=137 r1=0.7960 r0=2.0469 x1=0.0865 x0=1.3074 c1=0 c0=0 units=km
+New LineCode.ABC_4core_25 nphases=3 emergamps=113 r1=1.490 r0=2.8083 x1=0.1152 x0=2.0379 c1=0 c0=0 units=km
+New LineCode.ABC_4core_16 nphases=3 emergamps=86 r1=2.4093 r0=3.5286 x1=0.08735 x0=2.5889 c1=0 c0=0 units=km

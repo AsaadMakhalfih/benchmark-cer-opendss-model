@@ -1,0 +1,14 @@
+Clear All
+Set DefaultBaseFrequency=50
+New circuit.Summer_Weekday_Case
+basekv=11 pu=1.00 MVAsc3=3000 MVAsc1=3000 baseMVA=0.001
+Redirect Transformer.txt
+Redirect LineCode.txt
+Redirect LoadShapes.txt
+Redirect Lines.txt
+Redirect Loads.txt
+new monitor.line29 element=Line.line29 mode=32
+Set voltagebases=[11  0.4]
+Calcvoltagebases
+set mode=yearly
+set stepsize=30m
