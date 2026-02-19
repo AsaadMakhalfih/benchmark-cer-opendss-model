@@ -105,7 +105,7 @@ class Compiler:
                 if cer.inverter.vw_enabled:
                     self._p_check[i] = True
 
-    def _initialize_convergence(self):
+    def _initialise_convergence(self):
         """
         Initialize the convergence process.
         """
@@ -219,7 +219,7 @@ class Compiler:
         until the convergence criteria for P, Q, V are met.
         """
         i = 0
-        self._initialize_convergence()
+        self._initialise_convergence()
 
         while not self._converged and i < 300:
             # Copy temporary CER objects so any calculation does not impact their soc variables if any.
