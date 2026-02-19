@@ -1,3 +1,18 @@
+Clear All
+Set DefaultBaseFrequency=50
+New circuit.NetworkModel
+basekv=11 pu=1.00 MVAsc3=3000 MVAsc1=3000 baseMVA=0.001
+New LineCode.AAC_Triton nphases=3 emergamps=1000 r1=0.0708 r0=0.1834 x1=0.2883 x0=1.0057 c1=0 c0=0 units=km
+New LineCode.AAC_Neptune nphases=3 emergamps=653 r1=0.1834 r0=0.4228 x1=0.3254 x0=1.09 c1=0 c0=0 units=km
+New LineCode.ACSR_Cricket nphases=3 emergamps=637 r1=0.2459  r0=0.5726 x1=0.3340 x0=1.0906 c1=0 c0=0 units=km
+New LineCode.ACSR_Diving nphases=3 emergamps=1045 r1=0.1145  r0=0.2889 x1=0.3084 x0=0.9859 c1=0 c0=0 units=km
+New LineCode.ACSR_Baseball nphases=3 emergamps=378 r1=0.5523  r0=1.1343 x1=0.3479 x0=1.3163 c1=0 c0=0 units=km
+New LineCode.ABC_4core_150 nphases=3 emergamps=343 r1=0.2060 r0=0.6958 x1=0.09233 x0=0.4366 c1=0 c0=0 units=km
+New LineCode.ABC_4core_95 nphases=3 emergamps=257 r1=0.3981 r0=1.2489 x1=0.09783 x0=0.6676 c1=0 c0=0 units=km
+New LineCode.ABC_4core_50 nphases=3 emergamps=137 r1=0.7960 r0=2.0469 x1=0.0865 x0=1.3074 c1=0 c0=0 units=km
+New LineCode.ABC_4core_25 nphases=3 emergamps=113 r1=1.490 r0=2.8083 x1=0.1152 x0=2.0379 c1=0 c0=0 units=km
+New LineCode.ABC_4core_16 nphases=3 emergamps=86 r1=2.4093 r0=3.5286 x1=0.08735 x0=2.5889 c1=0 c0=0 units=km
+New Transformer.tr1 phases=3 windings=2 XHL=0.004 ppm_antifloat=0 buses=[sourcebus, 1, ] conns=[delta, wye, ] kVs=[11, 0.4, ] kVAs=[800, 800, ] taps=[1, 1.00, ] wdg=1 %R=0.0004 RdcOhms=0.00051425 wdg=2 %R=0.0004 RdcOhms=2.451627E-007
 New Line.line1 bus1=1 bus2=25 phases=3 length=21.863341000000005 units=m linecode=ACSR_Cricket normamps=400.0 emergamps=600.0
 New Line.line26 bus1=25 bus2=27 phases=3 length=5.9049 units=m linecode=ABC_4core_25 normamps=400.0 emergamps=600.0
 New Line.line27 bus1=25 bus2=32 phases=3 length=12.6224 units=m linecode=ACSR_Cricket normamps=400.0 emergamps=600.0
@@ -114,4 +129,9 @@ New Line.line887 bus1=884 bus2=906  phases=3 length=8.09168 units=m linecode=ABC
 New Line.line888 bus1=884 bus2=898  phases=3 length=10.3363 units=m linecode=ABC_4core_16 normamps=400.0 emergamps=600.0
 New Line.line894 bus1=891 bus2=900  phases=3 length=9.6933 units=m linecode=ABC_4core_16 normamps=400.0 emergamps=600.0
 New Line.line895 bus1=891 bus2=896  phases=3 length=3.2587 units=m linecode=ABC_4core_16 normamps=400.0 emergamps=600.0
+New 'EnergyMeter.Meter' Element='Line.line1' Terminal=1 SeqLosses=false 3PhaseLosses=false Option=[E, R, C] Action=Clear PhaseVolt=true
+
+
+Set voltagebases=[11  0.4]
+Calcvoltagebases
 

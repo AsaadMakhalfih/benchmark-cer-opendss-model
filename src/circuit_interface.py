@@ -27,7 +27,6 @@ class CircuitInterface:
         self._end_buses = None
         self._lines = None
         self._transformers = None
-        self._y_matrix = None
         self._metrics = None
 
         if self._opendss_model_path is not None:
