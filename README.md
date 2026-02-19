@@ -31,14 +31,9 @@ This work is described in the following paper:
     python -m venv myvenv
     ```
 3. Activate the environment:
-    - On Windows:
-      ```bash
-      myvenv\Scripts\activate
-      ```
-    - On macOS/Linux:
-      ```bash
-      source myvenv/bin/activate
-      ```
+    ```bash
+    myvenv\Scripts\activate
+    ```
 4. Install required packages:
     ```bash
     pip install -r myvenv/requirements.txt
