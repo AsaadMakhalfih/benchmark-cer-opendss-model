@@ -17,13 +17,13 @@ This work is described in the following paper:
 
 - Python 3.10 or higher
 - Packages listed in `myvenv/requirements.txt`
-- A working Python virtual environment (recommended: `myvenv`)
+- OpenDSS stand alone program.
 
 ## Installation
 
 1. Clone this repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/AsaadMakhalfih/benchmark-cer-opendss-model.git
     cd <repository_folder>
     ```
 2. Create a virtual environment:
