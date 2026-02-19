@@ -36,7 +36,7 @@ This work is described in the following paper:
     ```
 4. Install required packages:
     ```bash
-    pip install -r myvenv/requirements.txt
+    pip install -r requirements.txt
     ```
 
 ## Usage
@@ -51,6 +51,8 @@ This work is described in the following paper:
 - The model requires the OpenDSS be installed on your computer.
 - opendssdirect.py package can be an alternative to using the stand alone OpenDSS,
   however, you will need to change the COM code to opendssdirect.py format which is not difficult but might need time.
+- The network model is found uder data/network-model/model.dss, remember that you need to change this if working with different network model.
+  All you need is the lines and buses defined as well as an incidence matrix of label bus found in the label_bus_dict.csv.
 - The model is flexible and supports multiple operating scenarios.
 - Carefully check **time step and power units** when integrating with other systems.
 - Some simulations may take longer depending on scenario complexity.
