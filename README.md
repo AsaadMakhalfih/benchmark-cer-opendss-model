@@ -42,7 +42,7 @@ This work is described in the following paper:
 ## Usage
 
 - Example scripts are provided in the `examples/` folder.
-- All **time steps are in minutes**.
+- All **time step-sizes are in minutes**.
 - All **active and reactive power values are in watts (W) and vars (VAr)**.
 - Ensure your environment is activated before running any scripts.
 
@@ -55,7 +55,7 @@ This work is described in the following paper:
   All you need is the lines and buses defined as well as an incidence matrix of label bus found in the label_bus_dict.csv.
   This label_bus_dict.csv is needed to convert the labels to buses. Treat labels as an index of CERs, for instance, you can have Load_1, Load_2 ... etc. 1 and 2 here are labels but you still need to know here to place this in the network that's where label_bus_dict shows up.
 - The model is flexible and supports multiple operating scenarios.
-- Carefully check **time step and power units** when integrating with other systems.
+- Carefully check **time step-size and power units** when integrating with other systems.
 - Some simulations may take longer depending on scenario complexity.
 
 ## Citation
