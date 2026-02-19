@@ -1,4 +1,0 @@
-New XYCurve.MyPvsT npts=4  xarray=[0  25  75  100]  yarray=[1.2 1.0 0.8  0.6]
-New XYCurve.MyEff npts=4  xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97]
-New XYCurve.Ideal npts=4  xarray=[.1  .2  .4  1.0]  yarray=[1.0  1.0  1.0  1.0]
-New XYCurve.Tideal npts=4  xarray=[0  25  75  100]  yarray=[1.0  1.0  1.0  1.0]

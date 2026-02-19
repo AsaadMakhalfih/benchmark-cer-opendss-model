@@ -1,2 +1,0 @@
-New Loadshape.Solar npts=48 mInterval=30 mult=(file=data\pv_data\Solar.txt)
-New "Tshape.Temp" npts=48 mInterval=30 temp=(file=data\pv_data\Temp.txt)
