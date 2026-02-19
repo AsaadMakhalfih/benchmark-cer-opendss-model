@@ -1,6 +1,6 @@
 # Low-Voltage Distribution Network Benchmark Model
 
-This repository provides a **benchmark model for low-voltage (LV) distribution networks** with high distributed energy resource (DER) penetration under diverse operating scenarios.  
+This repository provides a **benchmark model for low-voltage (LV) distribution networks** with high consumer energy resource (CER) penetration under diverse operating scenarios.  
 
 This work is described in the following paper:
 
