@@ -46,7 +46,6 @@ class CircuitInterface:
                 else:
                     raise ValueError(f"Invalid input for {key}. Expected a dictionary of type {{str: [int]}}.")
 
-        self.initialise_y_matrix()
         self.initialise_cers()
         self.initialise_end_buses()
         self.initialise_lines()
@@ -75,15 +74,6 @@ class CircuitInterface:
             'reactive_losses': 0.0,
         }]
         self._metrics = pd.DataFrame(metrics)
-
-    def initialise_y_matrix(self):
-        self._dss_object.Text.Command = 'solve'
-        system_y = np.array(self._dss_object.ActiveCircuit.SystemY)
-        node_list = self._dss_object.ActiveCircuit.AllNodeNames
-        n = len(node_list)
-        pairs = system_y.reshape(-1, 2)
-        complex_numbers = pairs[:, 0] + 1j * pairs[:, 1]
-        self._y_matrix = complex_numbers.reshape(n, n)
 
     def initialise_cers(self):
         if self._loads_circuit_labels is not None:
