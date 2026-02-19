@@ -51,8 +51,9 @@ This work is described in the following paper:
 - The model requires the OpenDSS be installed on your computer.
 - opendssdirect.py package can be an alternative to using the stand alone OpenDSS,
   however, you will need to change the COM code to opendssdirect.py format which is not difficult but might need time.
-- The network model is found uder data/network-model/model.dss, remember that you need to change this if working with different network model.
+- The network model is found at data/network-model/model.dss, remember that you need to change this if working with different network model.
   All you need is the lines and buses defined as well as an incidence matrix of label bus found in the label_bus_dict.csv.
+  This label_bus_dict.csv is needed to convert the labels to buses. Treat labels as an index of CERs, for instance, you can have Load_1, Load_2 ... etc. 1 and 2 here are labels but you still need to know here to place this in the network that's where label_bus_dict shows up.
 - The model is flexible and supports multiple operating scenarios.
 - Carefully check **time step and power units** when integrating with other systems.
 - Some simulations may take longer depending on scenario complexity.
