@@ -16,7 +16,7 @@ This work is described in the following paper:
 ## Requirements
 
 - Python 3.10 or higher
-- Packages listed in `myvenv/requirements.txt`
+- Packages listed in `requirements.txt`
 - OpenDSS stand alone program.
 
 ## Installation
