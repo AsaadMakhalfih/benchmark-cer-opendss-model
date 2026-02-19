@@ -1,88 +1,63 @@
-Low-Voltage Distribution Network Benchmark Model
+# Low-Voltage Distribution Network Benchmark Model
 
-High CER Penetration Under Diverse Operating Scenarios
+This repository provides a **benchmark model for low-voltage (LV) distribution networks** with high distributed energy resource (DER) penetration under diverse operating scenarios.  
 
-This repository provides a comprehensive benchmark model for low-voltage distribution networks (LVDNs) with high penetration of Consumer Energy Resources (CERs), including photovoltaic (PV) systems, battery energy storage systems (BESS), and electric vehicles (EVs). The benchmark is intended to support reproducible research, algorithm development, and comparative studies in optimisation, control, and hosting capacity analysis of LVDNs.
+This work is described in the following paper:
 
-Reference
+**A. Makhalfih, C. Macana, R. P. Aguilera, E. Langham, and I. Anwar Ibrahim**  
+*"A Comprehensive Benchmark Model for Low-Voltage Distribution Networks With High CER Penetration Under Diverse Operating Scenarios,"*  
+**IEEE Access, vol. 13, pp. 211845–211882, 2025**  
+[doi:10.1109/ACCESS.2025.3644142](https://doi.org/10.1109/ACCESS.2025.3644142)
 
-If you use this benchmark model in your work, please cite:
+> **Note:** This work is mainly inspired by the concept of EPRI’s OpenDER project.  
+> OpenDER: [https://github.com/epri-dev/OpenDER](https://github.com/epri-dev/OpenDER)  
+> Only the concept was referenced; the code here is independently developed.
 
-A. Makhalfih, C. Macana, R. P. Aguilera, E. Langham, and I. Anwar Ibrahim,
-“A Comprehensive Benchmark Model for Low-Voltage Distribution Networks With High CER Penetration Under Diverse Operating Scenarios,”
-IEEE Access, vol. 13, pp. 211845–211882, 2025.
-DOI: 10.1109/ACCESS.2025.3644142
+## Requirements
 
-Inspiration and Acknowledgement
+- Python 3.10 or higher
+- Packages listed in `myvenv/requirements.txt`
+- A working Python virtual environment (recommended: `myvenv`)
 
-This work is conceptually inspired by the OpenDER project developed by the Electric Power Research Institute (EPRI):
+## Installation
 
-https://github.com/epri-dev/OpenDER
+1. Clone this repository:
+    ```bash
+    git clone <repository_url>
+    cd <repository_folder>
+    ```
+2. Create a virtual environment:
+    ```bash
+    python -m venv myvenv
+    ```
+3. Activate the environment:
+    - On Windows:
+      ```bash
+      myvenv\Scripts\activate
+      ```
+    - On macOS/Linux:
+      ```bash
+      source myvenv/bin/activate
+      ```
+4. Install required packages:
+    ```bash
+    pip install -r myvenv/requirements.txt
+    ```
 
-The overall benchmarking philosophy and scenario-based evaluation approach are inspired by OpenDER. However, no OpenDER source code is copied directly into this repository, except where explicitly stated and where similarities arise naturally from standard modelling practices. All implementations in this repository are original and independently developed.
+## Usage
 
-Repository Structure
+- Example scripts are provided in the `examples/` folder.
+- All **time steps are in minutes**.
+- All **active and reactive power values are in watts (W) and vars (VAr)**.
+- Ensure your environment is activated before running any scripts.
 
-networks/ – Low-voltage distribution network models
+## Notes
 
-cer_models/ – PV, battery, and EV models
+- The model is flexible and supports multiple operating scenarios.
+- Carefully check **time step and power units** when integrating with other systems.
+- Some simulations may take longer depending on scenario complexity.
 
-scenarios/ – Operating scenarios and uncertainty realisations
+## Citation
 
-examples/ – Minimal working examples demonstrating model usage
-
-results/ – Example outputs and visualisations
-
-Requirements
-
-Python 3.9+
-
-OpenDSS (installed and accessible from the system path)
-
-Recommended operating system: Linux or macOS (Windows supported)
-
-Installation
-
-It is strongly recommended to use a virtual environment.
-
-python -m venv myvenv
-source myvenv/bin/activate   # Linux/macOS
-myvenv\Scripts\activate      # Windows
-
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-
-Usage
-
-Users are encouraged to start with the examples provided in the examples/ directory. These scripts demonstrate how to:
-
-Load the benchmark network
-
-Instantiate CER models
-
-Generate operating scenarios
-
-Run power-flow and optimisation studies
-
-Important Modelling Notes
-
-Time step size is expressed in minutes throughout the repository.
-
-All power values are expressed in watts (W) and volt-amperes reactive (var).
-
-Voltage quantities follow per-phase complex representations unless otherwise stated.
-
-Scenario generation is based on Monte Carlo sampling where applicable.
-
-Users should ensure unit consistency when integrating custom models or datasets.
-
-Disclaimer
-
-This benchmark model is provided for research and educational purposes only. While care has been taken to ensure correctness, the authors make no guarantees regarding accuracy or fitness for any particular application.
-
-License
-
-This repository is distributed under an open-source license. See the LICENSE file for details.
+If you use this benchmark model in your research, please cite:
 
