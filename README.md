@@ -60,4 +60,7 @@ This work is described in the following paper:
 ## Citation
 
 If you use this benchmark model in your research, please cite:
-
+**A. Makhalfih, C. Macana, R. P. Aguilera, E. Langham, and I. Anwar Ibrahim**  
+*"A Comprehensive Benchmark Model for Low-Voltage Distribution Networks With High CER Penetration Under Diverse Operating Scenarios,"*  
+**IEEE Access, vol. 13, pp. 211845–211882, 2025**  
+[doi:10.1109/ACCESS.2025.3644142](https://doi.org/10.1109/ACCESS.2025.3644142)
