@@ -31,7 +31,7 @@ for day in days:
     with open(os.path.dirname(os.path.dirname(__file__)) + f"/data/network-model/label_bus_dict.csv", 'r') as csvfile:
         reader = csv.reader(csvfile)
         label_bus_dict = {int(row[0]): row[1] for row in reader}
-        
+
     opendss_path = os.path.dirname(os.path.dirname(__file__)) + f"/data/network-model/model.dss"
     circuit = CircuitInterface(opendss_path, label_bus_dict, {'load': loads_circuit_labels})
 
