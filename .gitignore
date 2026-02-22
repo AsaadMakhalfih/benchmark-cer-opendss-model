@@ -183,5 +183,6 @@ cython_debug/
 # csv files
 *.csv
 !data/network-model/label_bus_dict.csv
+!data/ev-data
 # excel files
 *.xlsx
